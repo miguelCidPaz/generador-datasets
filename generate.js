@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { faker } = require("@faker-js/faker");
-const config = require("./transferencias_bancarias.config"); // Change this to your config file
+const config = require("./presets/transferencias_bancarias.config"); // Change this to your config file
 
 const OUTPUT_DIR = path.join(__dirname, "output");
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR);
